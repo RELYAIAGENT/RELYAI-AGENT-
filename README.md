@@ -29,3 +29,23 @@ RELY AI is an innovative AI-powered agent designed to assist cryptocurrency inve
    ```bash
    git clone https://github.com/yourusername/rely-ai.git
    cd rely-ai
+
+2. Build the project (assuming you're using Maven):
+
+bash
+Copy
+mvn clean install
+
+3. Run the application:
+
+bash
+Copy
+java -jar target/rely-ai-1.0.jar
+
+
+Usage
+Follow the on-screen instructions to start using RELY AI.
+
+
+Contributing
+We welcome contributions from developers and community members! Please see our CONTRIBUTING.md for guidelines on how to get involved.
