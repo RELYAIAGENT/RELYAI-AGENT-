@@ -1,12 +1,6 @@
-function login() {
-    const username = document.getElementById('username').value;
-    if (username) {
-        document.getElementById('login').style.display = 'none';
-        document.getElementById('chat-area').style.display = 'block';
-        document.getElementById('messages').innerHTML += `<p><strong>${username}</strong> joined the chat.</p>`;
-    } else {
-        alert("Please enter a username.");
-    }
+function newThread() {
+    document.getElementById('messages').innerHTML = ''; // Reset chat area
+    alert("Starting a new thread!");
 }
 
 function sendMessage() {
@@ -14,7 +8,7 @@ function sendMessage() {
     const messagesDiv = document.getElementById('messages');
 
     if (userInput) {
-        messagesDiv.innerHTML += `<p>${userInput}</p>`;
+        messagesDiv.innerHTML += `<p>User: ${userInput}</p>`;
         document.getElementById('user-input').value = ''; // Clear input
         messagesDiv.scrollTop = messagesDiv.scrollHeight; // Scroll to bottom
     }
@@ -32,4 +26,12 @@ async function connectWallet() {
     } else {
         alert("Please install Phantom Wallet.");
     }
+}
+
+function showTokens() {
+    alert("Displaying tokens information...");
+}
+
+function showPrice() {
+    alert("Displaying price information...");
 }
